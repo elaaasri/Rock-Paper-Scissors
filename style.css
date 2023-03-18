@@ -1,3 +1,29 @@
+/* html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+header {
+    background-color: red;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+header h1 {
+    color: green;
+    font-family: 'Press Start 2P', cursive;
+} */
+
+
+
+
 img {
     width: 100px;
     display: flex;
