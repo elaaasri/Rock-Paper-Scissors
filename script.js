@@ -7,6 +7,7 @@ function getComputerChoice() {
 // Selecting Elements :
 let btns = document.querySelectorAll("button");
 let ResultContainer = document.querySelector("#Results-Container");
+let Footer = document.querySelector(".Footer");
 
 // Creating New Elements :  
 let finalResult  = document.createElement('h1');
@@ -29,7 +30,7 @@ ResultContainer.appendChild(playerScore);
 ResultContainer.appendChild(computerScore);
 ResultContainer.appendChild(playerScore);
 ResultContainer.appendChild(computerScore);
-ResultContainer.appendChild(endResult);
+ResultContainer.prepend(endResult);
 
 // Elements Start Textcontent: 
 finalResult.textContent = "Choose You're Weapon";
@@ -59,8 +60,8 @@ function playRound(playerSelection,computerSelection) {
     };
 
     if (pScore === 5) {
-        endResult.textContent = "YOU WON!";
-        ResultContainer.classList.remove("active");
+        endResult.textContent = "PLAYER WON!";
+        ResultContainer.classList.remove("active"); 
     } else if (cScore === 5) {
         endResult.textContent = "COMPUTER WON!";
         ResultContainer.classList.remove("active");
@@ -77,8 +78,8 @@ ArrFromBtns.forEach(btn => btn.addEventListener("click", function() {
 // Restart Button :
 let restartButton = document.createElement("button");
 restartButton.setAttribute("class", "Restart");
-restartButton.textContent = "Play Again";
-document.body.appendChild(restartButton);
+restartButton.textContent = "PLAY AGAIN!";
+Footer.before(restartButton);
 restartButton.onclick = function(e) {
     window.location.reload();
 };

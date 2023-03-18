@@ -1,30 +1,99 @@
-/* html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    background-color: rgb(158, 235, 52);
 }
 header {
-    background-color: red;
+    display: flex;
     height: 200px;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./imgs/background-cave.jpg");
+    background-position:center;
 }
 header h1 {
-    color: green;
-    font-family: 'Press Start 2P', cursive;
-} */
-
-
-
-
-img {
-    width: 100px;
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", Arial, Helvetica Neue, Helvetica, sans-serif;
+    letter-spacing: 1rem;
+    color: yellowgreen;
+}
+h1.End-Game {
+    font-family: "Press Start 2P", Arial, Helvetica Neue, Helvetica, sans-serif;
+    letter-spacing: 1rem;
+    font-style: italic;
+}
+h1.Final-Result {
+    font-family: "Press Start 2P", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 0;
+}
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+#Results-Container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div.Score {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 15px;
+}
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+.Restart {
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+    background-color: #4CAF50;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    font-family: "Press Start 2P", Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+.Restart:hover {
+    background-color: #3e8e41;
+}
+.Restart:active {
+    background-color: #1e7d33;
+    border-color: #1e7d33;
+}
+img {
+    width: 120px;
+    display: flex;
+}
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+    font-family: "Press Start 2P", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.Footer {
+    background-color: rgb(149, 196, 27);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 13px;
+}
+p {
+    font-family: "Press Start 2P", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: italic;
 }
