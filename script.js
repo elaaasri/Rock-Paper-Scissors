@@ -33,7 +33,7 @@ ResultContainer.appendChild(computerScore);
 ResultContainer.prepend(endResult);
 
 // Elements Start Textcontent: 
-finalResult.textContent = "Choose You're Weapon";
+finalResult.textContent = "Choose Your Weapon?";
 winnerResult.textContent = "First to Score 5 Wins The Game!";
 playerScore.textContent = "Player Score : 0";
 computerScore.textContent = "Computer Score : 0";
@@ -44,10 +44,8 @@ let cScore = 0;
 function playRound(playerSelection,computerSelection) {
     if (ResultContainer.classList.contains("active")){
         if (playerSelection.value === computerSelection) {
-            finalResult.textContent = `IT'S A TIE!`;
+        finalResult.textContent = `IT'S A TIE!`;
         winnerResult.textContent = `${playerSelection.value} Ties with ${computerSelection}`
-        playerScore.textContent = `Player Score : ${pScore}`;
-        computerScore.textContent = `Computer Score : ${cScore}`;
     } else if (playerSelection.value === "Rock" && computerSelection === "Scissors" || playerSelection.value === "Paper" && computerSelection === "Rock" || playerSelection.value === "Scissors" && computerSelection === "Paper") {
         finalResult.textContent ="You Won!";
         winnerResult.textContent = `${playerSelection.value} beats ${computerSelection}`
@@ -58,7 +56,6 @@ function playRound(playerSelection,computerSelection) {
         winnerResult.textContent = `${computerSelection} beats ${playerSelection.value}`
         computerScore.textContent = `Computer Score : ${++cScore}`;
     };
-
     if (pScore === 5) {
         endResult.textContent = "PLAYER WON!";
         ResultContainer.classList.remove("active"); 
