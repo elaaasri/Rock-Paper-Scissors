@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(158, 235, 52);
+    background-image: linear-gradient(to right,yellow, yellowgreen);
 }
 header {
     display: flex;
@@ -83,7 +83,7 @@ span {
     font-size: 10px;
 }
 .Footer {
-    background-color: rgb(149, 196, 27);
+    /* background-color: rgb(149, 196, 27); */
     height: 80px;
     display: flex;
     justify-content: center;
